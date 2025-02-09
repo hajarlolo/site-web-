@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Réservation</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <img class="logo" src="lolo.png">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="content.html">Menu</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </nav>
+    
+    <div class="form-container">
+        <form>
+            <h2>Réserver une Table</h2>
+            <p>Informations personnelles :</p>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom"  placeholder="Votre nom">
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom"  placeholder="Votre prénom">
+            <label for="nombre">Nombre de personnes :</label>
+            <input type="number" id="nombre" min="1" max="20">
+
+            <p>Plats à réserver :</p>
+            <label for="Entrées">Entrées</label>
+            <input list="Entrées" placeholder="Choisissez un plat">
+            <datalist id="Entrées" >
+                <option value="Harira">
+                <option value="Taktouka">
+                <option value="Zaalouk">
+                <option value="Maâkouda">
+                <option value="Salade de poivrons grillées">
+                <option value="Briouates au poulet">
+            </datalist>
+
+            <label for="Plats">Plats Principaux</label>
+            <input list="Plats" placeholder="Choisissez un plat">
+            <datalist id="Plats" >
+                <option value="Couscous royal">
+                <option value="Seffa sucrés">
+                <option value="Rfissa avec poulet">
+                <option value="Poisson chermoula au four">
+                <option value="Pastilla au poulet et amandes">
+                <option value="Pastilla au poisson">
+            </datalist>
+
+            <label for="Desserts">Desserts</label>
+            <input list="Desserts" placeholder="Choisissez un plat">
+            <datalist id="Desserts" >
+                <option value="Kaâk marocain">
+                <option value="Makrout">
+                <option value="Chebakia">
+                <option value="Fekkas">
+                <option value="Meskouta au citron">
+                <option value="plateau de halwa">
+            </datalist>
+
+            <label for="Boissons">Boissons</label>
+            <input list="Boissons" placeholder="Choisissez un plat">
+            <datalist id="Boissons" >
+                <option value="Thé">
+                <option value="Jus d'orange frais">
+                <option value="Jus d'avocat">
+                <option value="Panaché">
+                <option value="lben">
+                <option value="Atay bel louiza">
+            </datalist>
+
+            <label for="Salades">Salades</label>
+            <input list="Salades" placeholder="Choisissez un plat">
+            <datalist id="Salades" >
+                <option value="Salade Niçoise">
+                <option value="Salade César">
+                <option value="Salade Caprese">
+            </datalist>
+            <button type="submit">Envoyer la Réservation</button>
+        </form>
+    </div>
+</body>
+</html>

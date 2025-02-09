@@ -1,0 +1,178 @@
+/*****************************contenu**************************** */
+*{
+    background-color: #623e38;margin: 0px;
+    padding: 0px;}
+
+.container {
+    max-width: 1200px;
+    margin:  auto;
+    margin-top: 4%;}
+
+.section h2 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 100px 0 2rem 0;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    text-decoration: underline;
+    animation-name:titre ;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;}
+
+@keyframes titre{
+    0%{color:white ;}
+    25%{color:wheat ;}
+    50%{color: rgb(243, 205, 134);}
+    75%{color:wheat ;}
+    100%{color:white ;}}
+
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;}
+
+.recipe {
+    background: #3f2504;
+    box-shadow:10px 10px rgba(0, 0, 0, 0.334);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.8s ease;}
+
+.recipe img {
+    width: 100%;
+    height: 200px;
+    opacity: 0.8;
+    object-fit:cover;
+    transition: transform 0.5s ease;}
+
+.recipe:hover img {transform: scale(1.05);}
+
+.recipe h3 {
+    margin: 1rem;
+    color:  wheat;
+    background-color: #3f2504;
+    text-decoration: underline;}
+
+.recipe p {
+    margin: 0 1rem 1rem;
+    color: white;
+    background-color: #3f2504;}
+
+.recipe a {
+    display: block;
+    text-align: center;
+    margin: 0 1rem 1rem;
+    padding: 0.8rem;
+    border:3px dashed wheat;
+    background-color: #3f2504;
+    color: wheat;
+    font-size: 17px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;}
+
+.recipe a:hover {background-color: wheat;color: #3f2504;border-style: dashed;border-color: #3f2504;}
+
+/*****************************menu**************************** */
+/* nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    position:fixed;
+    background-color: black;
+    top: 0px;
+    border-color: rgb(253, 241, 241);
+    z-index: 1000;}
+
+.underline {
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to right, #b98f5c, #ffffff);
+    background-position: 1505px 1505px;
+    animation: color 3s infinite forwards;
+    position: fixed;
+    top: 58px;
+    z-index: 2000;}
+
+@keyframes color {
+    0% { background-position: 0% 100%;};
+    50% { background-position: 100% 100%;};
+    100% { background-position: 100% 0%;}}
+
+nav ul{list-style-type: none;}
+
+nav li{
+    float: right;
+    width: 25%;
+    text-align: center;}
+
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;}
+
+nav a{
+    font-family: Arial, sans-serif;
+    display: block; 
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 20px 0px;}
+
+nav a:hover{
+    color: rgb(209, 149, 112);}
+
+.logo{width: 80px;margin: 30px;margin-top: 1px;margin-bottom: 0;} */
+
+nav {
+    width: 100%;
+    height: 10%;
+    margin: 0px ;
+    position: absolute;
+    top: 0px;
+    background-color: transparent;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    gap: 40px;
+}
+
+nav ul li {
+    position: relative;
+    padding: 20px 140px;
+}
+
+nav ul li a {
+    color: #ceaa5b;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 17px;
+    font-family: Arial, sans-serif;
+    transition: color 0.3s ease;
+}
+
+/* Ligne animée */
+nav ul li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50px;
+    width: 0;
+    height: 2px;
+    background-color: #ceaa5b;
+    transition: width 0.3s ease;
+}
+
+/* Effet hover */
+nav ul li:hover::after {
+    width: 100%;
+}
+
+.logo {
+    width: 110px;
+    margin: 0;
+    padding: 0 100px;
+}
